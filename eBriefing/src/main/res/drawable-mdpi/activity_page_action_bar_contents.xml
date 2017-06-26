@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+    <selector xmlns:android="http://schemas.android.com/apk/res/android">
+
+        <item android:drawable="@drawable/ic_action_thumbnail_pressed" android:state_enabled="false" />
+        
+        <!-- Image display in background in select state -->
+        <item android:drawable="@drawable/ic_action_thumbnail_pressed" android:state_enabled="true" android:state_pressed="true"/>
+
+        <!-- Image display in background in select state -->
+        <item android:drawable="@drawable/ic_action_thumbnail_pressed" android:state_enabled="true" android:state_focused="true"/>
+
+        <!-- Default state -->
+        <item android:drawable="@drawable/ic_action_thumbnail" android:state_enabled="true" />
+
+    </selector>

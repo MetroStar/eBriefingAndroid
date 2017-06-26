@@ -1,0 +1,84 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical" >
+    
+    <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+	    <ListView
+	        android:id="@+id/listView_notes"
+	        android:layout_width="match_parent"
+	        android:layout_height="wrap_content"
+	        android:divider="@null"
+			android:dividerHeight="0dp"
+			android:scrollingCache="false"
+			android:cacheColorHint="#000000"
+			android:background="#EEEEEE" >
+	    </ListView>
+	    
+	    <LinearLayout
+	        android:id="@+id/empty"
+	        android:layout_width="fill_parent"
+	        android:layout_height="fill_parent"
+	        android:gravity="center_vertical|center_horizontal" >
+	
+	        <TextView
+	            android:id="@+id/textView_empty"
+	            android:layout_width="wrap_content"
+	            android:layout_height="wrap_content"
+	            android:gravity="center_horizontal"
+	            android:text="There are no notes to display!"
+	            android:textColor="#000000" />
+	    </LinearLayout>
+
+	    <RelativeLayout
+	        android:layout_width="match_parent"
+	        android:layout_height="match_parent" >
+
+	        <include
+	            android:id="@+id/include_chapter"
+	            android:layout_width="fill_parent"
+	            android:layout_height="wrap_content"
+	            layout="@layout/activity_chapter_notes_chapter_item" />
+
+<!-- 	        <LinearLayout -->
+<!-- 	            android:id="@+id/linearLayout_page" -->
+<!-- 	            android:layout_width="match_parent" -->
+<!-- 	            android:layout_height="wrap_content" -->
+<!-- 	            android:padding="10dp" -->
+<!-- 	            android:orientation="horizontal" -->
+<!-- 	            android:layout_below="@+id/linearLayout_chapter" -->
+<!-- 	            android:background="#EEEEEE" > -->
+
+<!-- 	            <include -->
+<!-- 	                android:id="@+id/include_list_item" -->
+<!-- 	                android:layout_width="wrap_content" -->
+<!-- 	                android:layout_height="wrap_content" -->
+<!-- 	                android:layout_margin="10dp" -->
+<!-- 	                layout="@layout/page_grid_list_item" -->
+<!-- 	                android:background="#FFF0F0F0" /> -->
+
+<!-- 	            <TextView -->
+<!-- 	                android:id="@+id/textView_page" -->
+<!-- 	                android:layout_width="fill_parent" -->
+<!-- 	                android:layout_height="fill_parent" -->
+<!-- 	                android:layout_margin="10dp" -->
+<!-- 	                android:background="#FFFFFFFF" -->
+<!-- 	                android:padding="10dp" -->
+<!-- 	                android:text="TextView" -->
+<!-- 	                android:textColor="#FF6C6C6C" /> -->
+<!-- 	        </LinearLayout> -->
+
+	    </RelativeLayout>
+	</FrameLayout>
+
+<!--     <com.metrostarsystems.ebriefing.BookChapter.TabNotes.FragmentNotesListView -->
+<!--         android:id="@+id/listView_notes" -->
+<!--         android:layout_width="match_parent" -->
+<!--         android:layout_height="wrap_content" > -->
+<!--     </com.metrostarsystems.ebriefing.BookChapter.TabNotes.FragmentNotesListView> -->
+
+</LinearLayout>

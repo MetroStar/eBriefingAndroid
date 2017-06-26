@@ -1,0 +1,11 @@
+<resources>
+
+    <!--
+         Customize dimensions originally defined in res/values/dimens.xml (such as
+         screen margins) for sw720dp devices (e.g. 10" tablets) in landscape here.
+    -->
+    <item name="view_pager_offset" format="float" type="dimen">.24</item>
+	<item name="book_grid_columns" format="integer" type="dimen">4</item>
+
+    
+</resources>

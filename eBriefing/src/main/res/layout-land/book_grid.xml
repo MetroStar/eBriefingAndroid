@@ -1,0 +1,41 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical"
+   	android:layout_gravity="center_vertical|center_horizontal"
+    android:gravity="center_vertical|center_horizontal"
+    android:background="@drawable/dashboard_background" >
+
+    <GridView
+        android:id="@+id/gridView_books"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:numColumns="@dimen/book_grid_columns"
+        android:padding="20dp"
+        android:verticalSpacing="27dp"
+        android:horizontalSpacing="27dp"
+        android:stretchMode="columnWidth"
+    	android:gravity="center"
+    	android:layout_gravity="center"
+    	android:drawSelectorOnTop="true"
+    	android:layoutAnimation="@anim/book_grid_animation_layout" >
+    </GridView>
+    
+    <LinearLayout
+        android:id="@+id/empty"
+        android:layout_width="350dp"
+        android:layout_height="fill_parent" 
+        android:layout_gravity="center_vertical|center_horizontal"
+    	android:gravity="center_vertical|center_horizontal" >
+
+        <TextView
+            android:id="@+id/textView_empty"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="There are no books to display!"
+            android:gravity="center_horizontal"
+            android:textColor="#000000" />
+    
+    </LinearLayout>
+    
+</LinearLayout>

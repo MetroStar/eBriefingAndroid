@@ -1,0 +1,24 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:layout_gravity="top"
+    android:gravity="top" >
+
+    <LinearLayout
+        android:id="@+id/linearLayout_header"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical" >
+    </LinearLayout>
+
+    <com.metrostarsystems.ebriefing.BookPage.Contents.FlowLayout
+        android:id="@+id/flowLayout_thumbnail"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_gravity="center_horizontal"
+        android:layout_margin="40dp" >
+    </com.metrostarsystems.ebriefing.BookPage.Contents.FlowLayout>
+
+</LinearLayout>

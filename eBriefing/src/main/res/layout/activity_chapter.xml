@@ -1,0 +1,36 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent" >
+    
+    <LinearLayout
+        android:id="@+id/linearLayout_slidingtab"
+        android:layout_width="fill_parent"
+	    android:layout_height="fill_parent"
+	    android:orientation="vertical"
+	    android:gravity="center" >
+   
+	    <com.viewpagerindicator.TabPageIndicator
+		    android:id="@+id/chapter_indicator"
+		    android:layout_height="wrap_content"
+		    android:layout_width="fill_parent" />
+	    
+	    <com.metrostarsystems.ebriefing.BookChapter.ActivityChapterViewPager
+	        android:id="@+id/viewPager_chapter"
+		    android:layout_width="match_parent"
+		    android:layout_height="0dp"
+		    android:layout_weight="1" >
+		    
+		</com.metrostarsystems.ebriefing.BookChapter.ActivityChapterViewPager>
+
+	</LinearLayout>    
+
+<!--     <include -->
+<!--         android:id="@+id/include_overview" -->
+<!--         android:layout_width="fill_parent" -->
+<!--         android:layout_height="wrap_content" -->
+<!--         android:visibility="gone" -->
+<!--         layout="@layout/activity_chapter_overview" /> -->
+        
+   
+
+</FrameLayout>

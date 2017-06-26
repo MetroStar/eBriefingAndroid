@@ -1,0 +1,18 @@
+<resources>
+
+    <!--
+         Customize dimensions originally defined in res/values/dimens.xml (such as
+         screen margins) for sw600dp devices (e.g. 7" tablets) here.
+    -->
+
+	<dimen name="overview_width">280dp</dimen>
+    <dimen name="overview_height">150dp</dimen>
+    
+    <dimen name="book_grid_list_item_layout_width">260dp</dimen>
+    <dimen name="book_grid_list_item_layout_height">240dp</dimen>
+    <dimen name="book_grid_list_item_image_height">140dp</dimen>
+    
+    <dimen name="chapter_grid_list_item_layout_width">185dp</dimen>
+    <dimen name="chapter_grid_list_item_layout_height">335dp</dimen>
+    <dimen name="chapter_grid_list_item_image_height">220dp</dimen>
+</resources>

@@ -1,0 +1,15 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/linearLayout_main"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="#000000"
+    android:orientation="vertical" >
+    
+    <include
+        android:id="@+id/include_page_reader"
+        android:layout_width="wrap_content"
+        android:layout_height="fill_parent"
+        layout="@layout/activity_page_reader" />
+
+  
+</LinearLayout>

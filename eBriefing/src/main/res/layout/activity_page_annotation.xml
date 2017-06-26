@@ -1,0 +1,40 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/linearLayout_annotation"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <include
+        android:id="@+id/include_page_bar_actions"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        layout="@layout/activity_page_bar_actions" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1" >
+        
+        <com.metrostarsystems.ebriefing.BookPage.Page.PageReader
+	        android:id="@+id/reader_pdf"
+	        android:layout_width="fill_parent"
+	        android:layout_height="fill_parent" />
+	    
+	    <com.metrostarsystems.ebriefing.BookPage.Annotations.AnnotationSurface
+	        android:id="@+id/surface_annotation"
+	        android:layout_width="fill_parent"
+	        android:layout_height="fill_parent"
+	        android:layout_alignParentLeft="true"
+	        android:layout_alignParentTop="true" >
+	    </com.metrostarsystems.ebriefing.BookPage.Annotations.AnnotationSurface>
+    </RelativeLayout>
+
+    
+    <include
+		android:id="@+id/include_page_toolbar"
+        android:layout_width="fill_parent"
+        android:layout_height="92dp"
+        layout="@layout/activity_page_toolbar" />
+    
+</LinearLayout>

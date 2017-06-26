@@ -1,0 +1,131 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="@dimen/book_grid_list_item_layout_width"
+    android:layout_height="@dimen/book_grid_list_item_layout_height"
+    android:orientation="vertical"
+    android:paddingTop="5dp"
+    android:paddingLeft="5dp"
+    android:paddingRight="5dp"
+    android:paddingBottom="5dp"
+    android:background="@drawable/rounded_corner_book"
+    android:descendantFocusability="blocksDescendants" >
+
+    <RelativeLayout
+        android:id="@+id/relativeLayout_cover"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/book_grid_list_item_image_height" >
+
+        <ImageView
+            android:id="@+id/imageView_book"
+            android:layout_width="fill_parent"
+            android:layout_height="@dimen/book_grid_list_item_image_height"
+            android:scaleType="fitXY"
+            android:src="@android:drawable/ic_menu_gallery" />
+
+        <ImageView
+            android:id="@+id/imageView_favorite"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:src="@drawable/favorite"
+            android:visibility="gone" />
+
+        <ImageView
+            android:id="@+id/imageView_new"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="5dp"
+            android:layout_marginBottom="5dp"
+            android:src="@drawable/circle_new"
+            android:visibility="gone" />
+
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/textView_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Book Title"
+        android:paddingLeft="10dp"
+        android:maxLines="1"
+        android:minLines="1"
+        android:textColor="#252525" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:gravity="center_horizontal"
+        android:background="#FFFFFF" >
+
+        <TextView
+            android:id="@+id/textView_description"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:text="Description"
+            android:ellipsize="end"
+           	android:minLines="3"
+           	android:maxLines="3"
+           	android:paddingLeft="10dp" />
+
+        <Button
+            android:id="@+id/button_download"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:background="@drawable/button_download"
+            android:visibility="gone" />
+
+        <LinearLayout
+            android:id="@+id/linearLayout_downloading"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:visibility="gone" >
+
+            <TextView
+                android:id="@+id/textView_status"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Downloading..."
+                android:paddingLeft="10dp" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/linearLayout_download_progress"
+            android:layout_width="fill_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal"
+            android:paddingBottom="5dp"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            android:visibility="gone"
+            android:layout_gravity="start"
+            android:gravity="center_vertical" >
+
+            <ProgressBar
+                android:id="@+id/progressBar_download"
+                style="?android:attr/progressBarStyleHorizontal"
+                android:layout_width="250dp"
+                android:layout_height="wrap_content"
+                android:indeterminate="true" />
+
+<!--             <ImageView -->
+<!--                 android:id="@+id/imageView_cancel" -->
+<!--                 android:layout_width="wrap_content" -->
+<!--                 android:layout_height="wrap_content" -->
+<!--                 android:src="@drawable/ic_action_cancel" /> -->
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <include
+         android:id="@+id/include_data_layout"
+         android:layout_width="match_parent"
+         android:layout_height="wrap_content"
+         layout="@layout/layout_book_data" />
+
+    
+</LinearLayout>

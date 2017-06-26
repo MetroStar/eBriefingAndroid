@@ -1,0 +1,290 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:orientation="vertical" >
+
+        <include
+            android:id="@+id/include_chapter"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            layout="@layout/activity_chapter_notes_chapter_item" />
+
+        <!-- <RelativeLayout -->
+        <!-- android:id="@+id/relativeLayout_chapter" -->
+        <!-- android:layout_width="fill_parent" -->
+        <!-- android:layout_height="wrap_content" -->
+        <!-- android:background="#FFFFFF" -->
+        <!-- android:orientation="horizontal" -->
+        <!-- android:padding="10dp" > -->
+
+
+        <!-- <TextView -->
+        <!-- android:id="@+id/textView_chapter" -->
+        <!-- android:layout_width="wrap_content" -->
+        <!-- android:layout_height="wrap_content" -->
+        <!-- android:layout_alignParentLeft="true" -->
+        <!-- android:layout_alignParentTop="true" -->
+        <!-- android:layout_centerVertical="true" -->
+        <!-- android:text="Chapter 1: " -->
+        <!-- android:textColor="#FF004D95" -->
+        <!-- android:textSize="20sp" /> -->
+
+
+        <!-- <TextView -->
+        <!-- android:id="@+id/textView_title" -->
+        <!-- android:layout_width="wrap_content" -->
+        <!-- android:layout_height="wrap_content" -->
+        <!-- android:layout_alignBaseline="@+id/textView_chapter" -->
+        <!-- android:layout_alignParentTop="true" -->
+        <!-- android:layout_toRightOf="@+id/textView_chapter" -->
+        <!-- android:layout_centerVertical="true" -->
+        <!-- android:text="Introduction" -->
+        <!-- android:textColor="#FF004D95" -->
+        <!-- android:textSize="20sp" /> -->
+
+
+        <!-- <TextView -->
+        <!-- android:id="@+id/textView_chapter_page_number" -->
+        <!-- android:layout_width="wrap_content" -->
+        <!-- android:layout_height="wrap_content" -->
+        <!-- android:layout_alignParentEnd="true" -->
+        <!-- android:layout_alignBaseline="@+id/textView_title" -->
+        <!-- android:layout_alignParentTop="true" -->
+        <!-- android:layout_centerVertical="true" -->
+        <!-- android:gravity="end" -->
+        <!-- android:layout_marginEnd="20dp" -->
+        <!-- android:text="1000" -->
+        <!-- android:textSize="20sp" /> -->
+
+
+        <!-- <TextView -->
+        <!-- android:id="@+id/textView_chapter_page" -->
+        <!-- android:layout_width="wrap_content" -->
+        <!-- android:layout_height="wrap_content" -->
+        <!-- android:layout_alignBaseline="@+id/textView_chapter_page_number" -->
+        <!-- android:layout_alignBottom="@+id/textView_chapter_page_number" -->
+        <!-- android:layout_toLeftOf="@+id/textView_chapter_page_number" -->
+        <!-- android:layout_marginRight="5dp" -->
+        <!-- android:text="PAGE" -->
+        <!-- android:textSize="20sp" /> -->
+
+
+        <!-- </RelativeLayout> -->
+
+        <RelativeLayout
+            android:id="@+id/relativeLayout_image"
+            android:layout_width="match_parent"
+            android:layout_height="240dp"
+            android:background="#EEEEEE"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            android:paddingTop="10dp" >
+
+            <include
+                android:id="@+id/include_list_item"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentTop="true"
+                android:layout_margin="10dp"
+                layout="@layout/activity_chapter_notes_image"
+                android:background="#F0F0F0" />
+
+            <RelativeLayout
+                android:id="@+id/relativeLayout_page"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:layout_alignBaseline="@+id/include_list_item"
+                android:layout_alignParentTop="true"
+                android:layout_margin="10dp"
+                android:layout_toEndOf="@+id/include_list_item" >
+
+                <RelativeLayout
+                    android:id="@+id/RelativeLayout1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentBottom="true"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentTop="true"
+                    android:layout_alignRight="@+id/textView_page"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="60dp"
+                    android:orientation="vertical" >
+
+                    <LinearLayout
+                        android:id="@+id/linearLayout_page_text"
+                        android:layout_width="fill_parent"
+                        android:layout_height="180dp"
+                        android:orientation="vertical"
+                        android:weightSum="6"
+                        android:animateLayoutChanges="true" >
+
+                        <TextView
+                            android:id="@+id/textView_content0"
+                            android:layout_width="fill_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="5"
+                            android:background="#FFFFFF"
+                            android:padding="10dp"
+                            android:text="TextView"
+                            android:textColor="#6C6C6C" />
+
+                        <TextView
+                            android:id="@+id/textView_date0"
+                            android:layout_width="fill_parent"
+                            android:layout_height="10dp"
+                            android:layout_weight="1"
+                            android:background="#FFFFFF"
+                            android:gravity="right"
+                            android:padding="10dp"
+                            android:text="September 19th 2014 | 20:12"
+                            android:textColor="#6C6C6C"
+                            android:textSize="10dp"
+                            android:textStyle="italic" />
+
+                    </LinearLayout>
+
+                    <ImageView
+                        android:id="@+id/imageView_note_page_icon"
+                        android:layout_width="20dp"
+                        android:layout_height="20dp"
+                        android:layout_alignParentBottom="true"
+                        android:layout_marginRight="5dp"
+                        android:layout_marginTop="5dp"
+                        android:layout_toLeftOf="@+id/textView_note_count"
+                        android:src="@drawable/note_page_icon" />
+
+                    <TextView
+                        android:id="@+id/textView_note_count"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentBottom="true"
+                        android:layout_alignParentRight="true"
+                        android:layout_marginBottom="1dp"
+                        android:layout_marginRight="30dp"
+                        android:text="500" />
+                </RelativeLayout>
+
+                <TextView
+                    android:id="@+id/textView_page_number"
+                    android:layout_width="50dp"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentEnd="true"
+                    android:layout_alignRight="@+id/textView_page"
+                    android:layout_below="@+id/textView_page"
+                    android:gravity="end"
+                    android:text="1000"
+                    android:textSize="20sp" />
+
+                <TextView
+                    android:id="@+id/textView_page"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_alignParentTop="true"
+                    android:text="PG"
+                    android:textSize="20sp" />
+
+                <ImageView
+                    android:id="@+id/imageView_collapse"
+                    android:layout_width="45dp"
+                    android:layout_height="45dp"
+                    android:layout_alignParentBottom="true"
+                    android:layout_alignParentRight="true"
+                    android:src="@drawable/note_page_collapse_icon" />
+
+            </RelativeLayout>
+
+            <ImageView
+                android:id="@+id/imageView_page_arrow"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_alignRight="@+id/include_list_item"
+                android:layout_marginRight="50dp"
+                android:src="@drawable/note_page_arrow" />
+        </RelativeLayout>
+
+        <LinearLayout
+            android:id="@+id/linearLayout_content"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/activity_chapter_note_background"
+            android:orientation="horizontal"
+            android:padding="10dp"
+            android:weightSum="2" >
+
+            <RelativeLayout
+                android:id="@+id/relativeLayout_content1"
+                android:layout_width="0dp"
+                android:layout_height="fill_parent"
+                android:layout_margin="20dp"
+                android:layout_weight="1" >
+
+                <TextView
+                    android:id="@+id/textView_content1"
+                    android:layout_width="fill_parent"
+                    android:layout_height="170dp"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentTop="true"
+                    android:background="#FFFFFF"
+                    android:padding="10dp"
+                    android:text="TextView"
+                    android:textColor="#6C6C6C" />
+
+                <TextView
+                    android:id="@+id/textView_date1"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_below="@+id/textView_content1"
+                    android:background="#FFFFFF"
+                    android:gravity="right"
+                    android:padding="10dp"
+                    android:text="September 19th 2014 | 20:12"
+                    android:textColor="#6C6C6C"
+                    android:textSize="10dp"
+                    android:textStyle="italic" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/relativeLayout_content2"
+                android:layout_width="0dp"
+                android:layout_height="fill_parent"
+                android:layout_margin="20dp"
+                android:layout_weight="1" >
+
+                <TextView
+                    android:id="@+id/textView_content2"
+                    android:layout_width="fill_parent"
+                    android:layout_height="170dp"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentTop="true"
+                    android:background="#FFFFFF"
+                    android:padding="10dp"
+                    android:text="TextView"
+                    android:textColor="#6C6C6C" />
+
+                <TextView
+                    android:id="@+id/textView_date2"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_below="@+id/textView_content2"
+                    android:background="#FFFFFF"
+                    android:gravity="right"
+                    android:padding="10dp"
+                    android:text="September 19th 2014 | 20:12"
+                    android:textColor="#6C6C6C"
+                    android:textSize="10dp"
+                    android:textStyle="italic" />
+            </RelativeLayout>
+        </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>

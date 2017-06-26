@@ -1,0 +1,20 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:background="@drawable/square_corner_bookmark" >
+
+        <include
+            android:id="@+id/include_list_item"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            layout="@layout/page_grid_list_item" />
+
+    </LinearLayout>
+    
+</LinearLayout>

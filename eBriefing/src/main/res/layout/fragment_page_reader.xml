@@ -1,0 +1,76 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+    
+    
+
+    <com.metrostarsystems.ebriefing.BookPage.Page.PageReader
+        android:id="@+id/reader_pdf"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+    
+<!--     <com.metrostarsystems.ebriefing.BookPage.Annotations.AnnotationSurface -->
+<!--         android:id="@+id/surface_annotation" -->
+<!--         android:layout_width="fill_parent" -->
+<!--         android:layout_height="fill_parent" -->
+<!--         android:layout_alignParentLeft="true" -->
+<!--         android:layout_alignParentTop="true" -->
+<!--         android:visibility="gone" > -->
+<!--     </com.metrostarsystems.ebriefing.BookPage.Annotations.AnnotationSurface> -->
+
+	<com.metrostarsystems.ebriefing.BookPage.Bookmarks.BookmarkImageView
+            android:id="@+id/imageView_bookmark"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentRight="true"
+            android:paddingLeft="20dp"
+            android:paddingRight="20dp"
+            android:paddingBottom="20dp"
+            android:layout_marginRight="60dp"
+            android:src="@drawable/bookmark_add" />
+
+	<TextView
+         android:id="@+id/textView_page_number"
+         android:layout_width="40dp"
+         android:layout_height="wrap_content"
+         android:layout_alignParentBottom="true"
+         android:layout_centerHorizontal="true"
+         android:layout_marginBottom="10dp"
+         android:textAppearance="?android:attr/textAppearanceSmall"
+         android:background="@drawable/rounded_corner_page_grid"
+         android:textColor="#FFFFFF"
+         android:gravity="center" />
+	
+<!-- 	<Button -->
+<!--             android:id="@+id/button_notes_indicator" -->
+<!--             android:layout_width="60dp" -->
+<!--             android:layout_height="60dp" -->
+<!--             android:layout_alignParentRight="true" -->
+<!--             android:layout_alignParentBottom="true" -->
+<!--             android:layout_marginBottom="16dp" -->
+<!--             android:layout_marginRight="60dp" -->
+<!--             android:background="@drawable/activity_page_button_notes_indicator" -->
+<!--             android:visibility="gone" /> -->
+
+<!-- 	<ImageView -->
+<!-- 	    android:id="@+id/imageView_bookmark" -->
+<!-- 	    android:layout_width="wrap_content" -->
+<!-- 	    android:layout_height="wrap_content" -->
+<!-- 	    android:layout_alignParentRight="true" -->
+<!-- 	    android:layout_alignParentTop="true" -->
+<!-- 	    android:layout_marginRight="28dp" -->
+<!-- 	    android:src="@drawable/bookmark_add" /> -->
+
+<!-- 	<Button -->
+<!-- 	    android:id="@+id/button_notes" -->
+<!-- 	    android:layout_width="60dp" -->
+<!-- 	    android:layout_height="60dp" -->
+<!-- 	    android:layout_alignBottom="@+id/textView_page_number" -->
+<!-- 	    android:layout_alignParentRight="true" -->
+<!-- 	    android:layout_marginRight="14dp" -->
+<!-- 	    android:background="@drawable/activity_page_button_notes_indicator" -->
+<!-- 	    android:visibility="gone" /> -->
+    
+</RelativeLayout>

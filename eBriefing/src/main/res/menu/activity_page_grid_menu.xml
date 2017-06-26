@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+<!--     <item android:id="@+id/activity_page_search"      -->
+<!--         android:title="Search" -->
+<!--         android:icon="@drawable/ic_action_search" -->
+<!--         android:showAsAction="ifRoom" /> -->
+    <item android:id="@+id/activity_page_thumbnail"     
+        android:title="Thumbnail"
+        android:icon="@drawable/ic_action_thumbnail_active"
+        android:showAsAction="ifRoom" />
+</menu>

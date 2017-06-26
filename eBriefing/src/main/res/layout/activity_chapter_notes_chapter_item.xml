@@ -1,0 +1,58 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:layout_gravity="top"
+    android:background="#FFFFFF"
+    android:orientation="horizontal"
+    android:padding="10dp"
+    android:visibility="visible" >
+
+    <TextView
+        android:id="@+id/textView_chapter"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_centerVertical="true"
+        android:text="Chapter 1: "
+        android:textColor="#FF004D95"
+        android:textSize="20sp" />
+
+    <TextView
+        android:id="@+id/textView_chapter_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/textView_chapter"
+        android:layout_alignParentTop="true"
+        android:layout_centerVertical="true"
+        android:layout_toRightOf="@+id/textView_chapter"
+        android:text="Introduction"
+        android:textColor="#FF004D95"
+        android:textSize="20sp" />
+
+    <LinearLayout
+        android:id="@+id/linearLayout_page_header"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentTop="true"
+        android:layout_centerVertical="true" >
+
+        <TextView
+            android:id="@+id/textView_chapter_page"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="PAGE "
+            android:textSize="20sp" />
+        
+        <TextView
+            android:id="@+id/textView_chapter_page_number"
+            android:layout_width="50dp"
+            android:layout_height="wrap_content"
+            android:gravity="end"
+            android:text="1000"
+            android:textSize="20sp" />
+
+    </LinearLayout>
+
+</RelativeLayout>

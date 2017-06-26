@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+  <item android:id="@+id/delete_book"     
+        android:title="Remove Book"
+        android:showAsAction="ifRoom" />
+  <item android:id="@+id/add_favorite"     
+        android:title="Add to Favorites"
+        android:showAsAction="ifRoom" />
+  <item android:id="@+id/remove_favorite"     
+        android:title="Remove from Favorites"
+        android:showAsAction="ifRoom" />
+  <item android:id="@+id/cancel_download"     
+        android:title="Cancel Download"
+        android:showAsAction="ifRoom" />
+  <item android:id="@+id/pause_download"     
+        android:title="Pause Download"
+        android:showAsAction="ifRoom" />
+  <item android:id="@+id/resume_download"     
+        android:title="Resume Download"
+        android:showAsAction="ifRoom" />
+</menu>

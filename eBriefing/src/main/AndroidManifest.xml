@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.metrostarsystems.ebriefing">
+
+    
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+    
+    <supports-screens android:largeScreens="true"
+    				  android:normalScreens="false"
+    				  android:smallScreens="false"
+    				  android:xlargeScreens="true"
+        			  android:requiresSmallestWidthDp="600" />
+
+    <application
+        android:name="com.metrostarsystems.ebriefing.MainApplication"
+        android:allowBackup="true"
+        android:icon="@drawable/ic_launcher"
+        android:label="@string/app_name"
+        android:theme="@style/Theme.eBriefing" android:largeHeap="true">
+        
+        <service
+		  android:name="com.metrostarsystems.ebriefing.Services.DownloadService.DownloadService"
+		  android:icon="@drawable/ic_book_notification" >
+<!-- 		  android:process=":remote" -->
+		  
+<!-- 		  android:label="@string/service_name" > -->
+<!-- 		  <intent-filter> -->
+<!--         	<action android:name="com.metrostarsystems.ebriefing.Data.DownloadManager.DownloadService" /> -->
+<!--      	  </intent-filter> -->
+		</service>
+		
+        <service
+		  android:name="com.metrostarsystems.ebriefing.Services.SyncService.SyncService"
+		  android:icon="@drawable/ic_book_notification" >
+		</service>
+		
+        <service
+		  android:name="com.metrostarsystems.ebriefing.Services.CoreService.CoreService"
+		  android:icon="@drawable/ic_book_notification" >
+		</service>
+        
+        <!-- Register the Alarm Receiver -->
+        
+        
+        <activity
+            android:name="com.metrostarsystems.ebriefing.Activity.Splash.ActivitySplash"
+            android:label="@string/app_name" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        
+        <activity
+            android:name="com.metrostarsystems.ebriefing.Activity.Library.ActivityDemo" >
+        </activity>
+        
+        <activity
+            android:name="com.metrostarsystems.ebriefing.Dashboard.ActivityDashboard"
+            android:launchMode="singleTask"
+            android:icon="@drawable/ic_action_bar_logo" >
+        </activity>
+        
+        <activity
+            android:name="com.metrostarsystems.ebriefing.BookChapter.ActivityChapter"
+            android:parentActivityName="com.metrostarsystems.ebriefing.Dashboard.ActivityDashboard"  >
+            <meta-data
+	            android:name="android.support.PARENT_ACTIVITY"
+	            android:value="com.metrostarsystems.ebriefing.Dashboard.ActivityDashboard" />  
+        </activity>
+        
+        <activity
+            android:theme="@style/Theme.NoActionBar"
+            android:name="com.metrostarsystems.ebriefing.BookPage.ActivityPage"
+            android:parentActivityName="com.metrostarsystems.ebriefing.BookChapter.ActivityChapter"
+            android:windowSoftInputMode="adjustNothing" >
+            <meta-data
+	            android:name="android.support.PARENT_ACTIVITY"
+	            android:value="com.metrostarsystems.ebriefing.BookChapter.ActivityChapter" />  
+        </activity>
+        
+        <activity
+            android:theme="@style/Theme.NoActionBar"
+            android:name="com.metrostarsystems.ebriefing.BookPage.Annotations.ActivityAnnotation"
+            android:parentActivityName="com.metrostarsystems.ebriefing.BookPage.ActivityPage"
+            android:windowSoftInputMode="adjustNothing" >
+            <meta-data
+	            android:name="android.support.PARENT_ACTIVITY"
+	            android:value="com.metrostarsystems.ebriefing.BookPage.ActivityPage" />  
+        </activity>
+        
+        <activity
+            android:name="com.metrostarsystems.ebriefing.BookPage.Contents.ActivityContents"  >
+        </activity>
+        
+        <activity
+            android:name="com.metrostarsystems.ebriefing.Activity.Tutorial.ActivityTutorial"  >
+        </activity>
+        
+        <activity
+            android:name="com.metrostarsystems.ebriefing.Activity.About.ActivityAbout"  >
+        </activity>
+        
+        <activity
+            android:name="com.metrostarsystems.ebriefing.Activity.Library.ActivityEnterprise"
+            android:windowSoftInputMode="stateHidden" >
+            <meta-data
+	            android:name="android.support.PARENT_ACTIVITY"
+	            android:value="com.metrostarsystems.ebriefing.Activity.Splash.ActivitySplash" />
+        </activity>
+    </application>
+
+</manifest>

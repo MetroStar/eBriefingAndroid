@@ -1,0 +1,110 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:weightSum="4" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:layout_weight="2"
+        android:orientation="vertical" >
+
+        <TextView
+            android:id="@+id/textView_title"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:text="Bookmark"
+            android:textSize="25dp"
+            android:textColor="#FF004D95"
+            android:layout_marginTop="5dp"
+            android:layout_marginBottom="8dp" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="2"
+        android:orientation="vertical"
+        android:background="#FFF0F0F0"
+        android:padding="15dp" >
+
+        <EditText
+            android:id="@+id/editText_title"
+            android:layout_width="500dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="2"
+            android:background="@drawable/square_corner_notes"
+            android:ems="10"
+            android:gravity="top"
+            android:hint="Enter title here..."
+            android:singleLine="true"
+            android:padding="5dp"
+            android:scrollbars="vertical"
+            android:textColor="#FF6C6C6C" >
+
+            <requestFocus />
+        </EditText>
+
+<!--         <LinearLayout -->
+<!--             android:layout_width="match_parent" -->
+<!--             android:layout_height="wrap_content" -->
+<!--             android:layout_marginTop="10dp" -->
+<!--             android:layout_marginBottom="25dp" -->
+<!--             android:layout_marginRight="5dp" -->
+<!--             android:layout_weight="1" -->
+<!--             android:gravity="right" > -->
+
+<!--             <TextView -->
+<!--                 android:id="@+id/textView1" -->
+<!--                 android:layout_width="wrap_content" -->
+<!--                 android:layout_height="wrap_content" -->
+<!--                 android:text="Characters Remaining: " -->
+<!--                 android:textColor="#FF6C6C6C" /> -->
+
+<!--             <TextView -->
+<!--                 android:id="@+id/textView_character_count" -->
+<!--                 android:layout_width="wrap_content" -->
+<!--                 android:layout_height="wrap_content" -->
+<!--                 android:text="500" /> -->
+<!--         </LinearLayout> -->
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_weight="1"
+        android:weightSum="3"
+        android:background="#FFCCCCCC" >
+
+        <TextView
+            android:id="@+id/textView_cancel"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:text="Cancel"
+            android:textColor="@color/dialog_button_cancel_text_color"
+            android:clickable="true"
+            android:layout_weight="1"
+            android:gravity="left|center_vertical"
+            android:paddingLeft="15dp"
+            android:paddingRight="0dp"
+            android:background="@color/dialog_button_cancel_selector" />
+
+        <TextView
+            android:id="@+id/textView_save"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:text="Delete"
+            android:textColor="@color/dialog_button_action_text_color"
+            android:clickable="true"
+            android:layout_weight="2"
+            android:gravity="center"
+            android:background="@color/dialog_button_action_selector"
+            android:enabled="true" />
+
+    </LinearLayout>
+
+</LinearLayout>

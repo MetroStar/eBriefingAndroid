@@ -1,0 +1,35 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/RelativeLayout1"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical" >
+
+    <android.support.v4.view.ViewPager
+        android:id="@+id/viewPager_tutorial"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true" >
+    </android.support.v4.view.ViewPager>
+    
+    <com.viewpagerindicator.CirclePageIndicator
+		android:id="@+id/indicator"
+		android:layout_height="wrap_content"
+		android:layout_width="fill_parent"
+		android:padding="10dp"
+		android:scaleX="3"
+		android:scaleY="3"
+		android:layout_marginBottom="10dp"
+		android:layout_alignParentBottom="true" />
+
+    <Button
+        android:id="@+id/button_close"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:layout_margin="5dp"
+        android:layout_marginBottom="63dp"
+        android:background="@drawable/activity_tutorial_button_close" />
+
+</RelativeLayout>

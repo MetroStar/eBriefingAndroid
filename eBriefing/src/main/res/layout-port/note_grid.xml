@@ -1,0 +1,37 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical"
+    android:background="@drawable/dashboard_background"
+    android:layout_gravity="center_vertical|center_horizontal"
+    android:gravity="center_vertical|center_horizontal" >
+
+    <com.metrostarsystems.ebriefing.BookChapter.TabNotes.FragmentNotesGridView
+        android:id="@+id/gridView_notes"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:drawSelectorOnTop="true"
+        android:gravity="center"
+        android:horizontalSpacing="10dp"
+        android:numColumns="2"
+        android:padding="10dp"
+        android:stretchMode="columnWidth"
+        android:verticalSpacing="10dp" >
+    </com.metrostarsystems.ebriefing.BookChapter.TabNotes.FragmentNotesGridView>
+
+    <LinearLayout
+        android:id="@+id/empty"
+        android:layout_width="350dp"
+        android:layout_height="fill_parent"
+        android:gravity="center_vertical|center_horizontal" >
+
+        <TextView
+            android:id="@+id/textView_empty"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal"
+            android:text="There are no notes to display!"
+            android:textColor="#000000" />
+    </LinearLayout>
+    
+</LinearLayout>

@@ -1,0 +1,78 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="#FF004D95" >
+
+    <ImageView
+        android:id="@+id/imageView_splash"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:src="@drawable/splash" />
+
+    
+
+    <LinearLayout
+        android:id="@+id/linearLayout_options"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:orientation="vertical"
+        android:gravity="center"
+        android:padding="40dp" >
+
+        <TextView
+            android:id="@+id/textView2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Connection Failure"
+            android:textColor="#FFFFFF" />
+        
+        <TextView
+            android:id="@+id/textView3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Unable to access Library. Please check that your connection settings are correct."
+            android:textColor="#FFFFFF" />
+
+        <Button
+            android:id="@+id/button_retry"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:text="Retry Connection"
+            android:textColor="#FFFFFF"
+            android:background="@drawable/button_outline"
+            android:layout_marginTop="10dp" />
+        
+        <Button
+            android:id="@+id/button_connection_settings"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:text="Change Connection Settings"
+            android:textColor="#FFFFFF"
+            android:background="@drawable/button_outline"
+            android:layout_marginTop="10dp" />
+        
+        <Button
+            android:id="@+id/button_offline"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:text="Work Offline"
+            android:textColor="#FFFFFF"
+            android:background="@drawable/button_outline"
+            android:layout_marginTop="10dp" />
+        
+        <Button
+            android:id="@+id/button_exit"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:text="Exit"
+            android:textColor="#FFFFFF"
+            android:background="@drawable/button_outline"
+            android:layout_marginTop="10dp" />
+        
+    </LinearLayout>
+
+</RelativeLayout>
