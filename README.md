@@ -3,10 +3,6 @@ eBreifing combines disperse PDFs and photos into a single document
 
 Transform the way you create, share, and view files with eBriefing.
 
-**eBook of the Month** 
-New additions for the month of May!
-•	Federal Acquisition Regulations manual
-•	NAICS manual
 
 eBriefing for Android seamlessly combines documents and photos into an eBook format, which 
 can be viewed, marked-up, and shared to other mobile devices. Aggregate content from 
